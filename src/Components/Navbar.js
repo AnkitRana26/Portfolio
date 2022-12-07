@@ -39,7 +39,7 @@ const Navbar = ({scollHandle}) => {
         display: "flex",
         justifiyContent: "space-between",
         width: "100%",
-        padding: "1% 1%",
+        padding: "5px 1%",
         position: "sticky",
         top: "0%",
         zIndex:"10"
@@ -58,7 +58,7 @@ const Navbar = ({scollHandle}) => {
         <img className="logoImage" height={"70px"} width={"75px"} src={logo} />
         
       </Box>
-      <Box className="logoBox" sx={{ display: "none" }}>
+      <Box  className="logoBox" sx={{ display: "none" }}>
         <img height={"70px"} width={"75px"} src={logo} />
       </Box>
       <Box

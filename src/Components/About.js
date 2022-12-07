@@ -26,7 +26,7 @@ const About = () => {
             <Zoom in={checked1}>
                 <Typography variant='h4' sx={{color:"rgb(191,201,232)",backgroundColor:"rgb(11,24,47)",position:"absolute",top:"-25px",padding:"0% 5% 0% 0%"}} >About Me</Typography>
             </Zoom>
-            <Slide direction='up' in={checked2}>
+            <Slide direction='right' in={checked2}>
 
                 <Typography sx={{marginTop:"8%",color:"rgb(136,146,176)"}}>
                     Hello! My name is <span style={{color:"white"}}>Ankit Rana</span> and I enjoy creating things that live on the internet. My interest in computers and technology started back in  when I was in my 6th grade and my father brought me a computer and after that day i kept doing lot of new things on my that.

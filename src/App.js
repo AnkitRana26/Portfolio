@@ -5,6 +5,7 @@ import Intro from './Components/Intro';
 import Sidebar from './Components/MiniComponent/Sidebar';
 import About from './Components/About';
 import { useRef } from 'react';
+import Skill from './Components/Skill';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
         <Intro/>
         <Sidebar/>
         <About  />
+        <Skill/>
     </div>
   );
 }
