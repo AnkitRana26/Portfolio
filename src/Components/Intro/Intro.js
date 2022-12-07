@@ -1,7 +1,7 @@
 import { Box, Button, Slide, Typography, Zoom } from '@mui/material'
 import React, { useEffect, useState } from 'react'
-import { details } from '../details';
-import LinearDeterminate from './MiniComponent/ProgressComp';
+import { details } from '../../details';
+import LinearDeterminate from '../MiniComponent/ProgressComp';
 
 
 const Intro = () => {
@@ -35,7 +35,14 @@ const Intro = () => {
             <Typography sx={{color:"rgb(136,146,176)",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
         </Zoom>
         <Zoom in={checked}>
-            <Button sx={{
+            
+            <Button 
+            onClick={()=>window.scrollTo({
+                top:details.scrollPosition[2],
+                behavior:"smooth"
+            })}
+            sx={{
+                
               border: "1px solid #64ffda",
               color: "white",
               fontSize: "1rem",

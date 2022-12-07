@@ -2,7 +2,11 @@ export const details={
     firstname:"Ankit",
     lastname:"Rana",
     navList:["About","Skills","Work","Contact"],
-    scrollPosition:[545,1075,580,580],
+    scrollPosition:[545,1075,1745,3000],
+    linkedInLink:"https://www.linkedin.com/in/ankitofficial/",
+    githubLink:"https://github.com/AnkitRana26",
+    instagramLink:"https://www.instagram.com/thetallboyankitr/",
+    mailLink:"mailto:ranaankitr@outlook.com",
     techStack:[
             {
                 name:"HTML",
@@ -54,7 +58,9 @@ export const details={
             github:"https://github.com/AnkitRana26/esqido-clone",
             live:"https://esqido.netlify.app/",
             type:"Colaborative",
-            tech:["React","Chakra UI","Material UI"]
+            tech:["React","Chakra UI","Material UI"],
+            img:"https://miro.medium.com/max/1100/1*iGBZIUhEaf-T-8Q2SEIMKA.webp",
+            description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
 
         {
@@ -62,7 +68,9 @@ export const details={
             github:"https://github.com/Rajatsinha05/Zomato-clone",
             live:"https://clone-zomato-project.netlify.app/",
             type:"Collaborative",
-            tech:["HTML","CSS","JavaScript"]
+            tech:["HTML","CSS","JavaScript"],
+            img:"https://camo.githubusercontent.com/56ea395ac88ef9f95de1b17c642805a6e62566b001a9bd920aa1eaee8e1c242a/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a63433478787468304838345f7866315f446e5a507a412e706e67",
+            description:"Food Ordering Platform where user can order food easily"
         },
     
         {
@@ -70,21 +78,18 @@ export const details={
             github:"https://github.com/Raghvendra2811/Nykaa-Web-Clone",
             live:"https://naykaa.netlify.app/",
             type:"Collaborative",
-            tech:["HTML","CSS","JavaScript","BootStrap"]
+            tech:["HTML","CSS","JavaScript","BootStrap"],
+            img:"https://github.com/Raghvendra2811/Nykaa-Web-Clone/raw/main/src/landing.png",
+            description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
         {
             name:"Flixy Movie",
             github:"https://github.com/AnkitRana26/Flixy",
             live:"https://flixymovie.netlify.app/index.html",
             type:"Individual",
-            tech:["HTML","CSS","JavaScript"]
-        },
-        {
-            name:"Student Management",
-            github:"https://github.com/AnkitRana26/Student-Managment",
-            live:"https://managestudentsystem.netlify.app/",
-            type:"Individual",
-            tech:["HTML","CSS","JavaScript"]
+            tech:["HTML","CSS","JavaScript"],
+            img:"https://github.com/AnkitRana26/Flixy/raw/main/src/home1.png",
+            description:"Movie Related Information Application,Gives all Information and related Media of Movies,Shows"
         }
 
     ]

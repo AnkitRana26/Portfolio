@@ -1,8 +1,8 @@
 
 import { Box, ListItem, Typography, Zoom } from '@mui/material'
-
 import React, { useState } from 'react'
-import { details } from '../details'
+import { details } from '../../details'
+import "./Skill.css"
 
 const Skill = () => {
   const [checked1,setChecked1]= useState(false);
@@ -38,10 +38,10 @@ const Skill = () => {
                 details.techStack.map((ele,index)=>{
                   return(
 
-                      <ListItem style={{display:"block",width:"25%"}}>
+                      <ListItem key={index} style={{display:"block",width:"25%"}}>
                             <Zoom  in={checked1}>
-                              <Box>
-                                <img width={"45%"} style={{margin:"auto",display:"block"}} src={ele.img}/>
+                              <Box className='skillStack'>
+                                <img className='skillStack' width={"45%"} style={{margin:"auto",display:"block"}} src={ele.img}/>
                                 <Typography sx={{textAlign:"center",color:"white"}}>{ele.name}</Typography>
                               </Box>
                             </Zoom>

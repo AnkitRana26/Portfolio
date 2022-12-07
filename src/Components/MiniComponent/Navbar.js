@@ -1,9 +1,9 @@
 import { Box,  Button,  Slide, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import LinearDeterminate from "./MiniComponent/ProgressComp";
-import logo from "../media/logo.png";
+import LinearDeterminate from "./ProgressComp";
+import logo from "../../media/logo.png";
 import "./Navbar.css";
-import { details } from "../details";
+import { details } from "../../details";
 
 
 const Navbar = ({scollHandle}) => {

@@ -1,0 +1,13 @@
+.projectImage{
+    border-radius: 5px;
+}
+.projectImage:hover{
+
+    transition: 100ms linear;
+    transform: translate(0, -5px);
+}
+
+/* 
+.projectDescription{
+    
+} */
