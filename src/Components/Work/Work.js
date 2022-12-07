@@ -50,7 +50,7 @@ const Work = () => {
                                         <Typography sx={{color:"rgb(203,213,245)"}} variant='h5'>{ele.name}</Typography>
                                         <Box sx={{display:"flex",justifyContent:"space-between",width:"12%"}}>
                                             <a style={{textDecoration:"none",color:"white",fontSize:"1.1rem"}} href={ele.github} target={"_blank"} ><i className="fa-brands fa-github"></i></a>
-                                            <a style={{textDecoration:"none",color:"white",fontSize:"1.1rem"}} href={ele.live} target={"_blank"} ><i class="fa-solid fa-globe"></i></a>
+                                            <a style={{textDecoration:"none",color:"white",fontSize:"1.1rem"}} href={ele.live} target={"_blank"} ><i className="fa-solid fa-globe"></i></a>
                                         </Box>
                                     </Box>
                                     <Typography sx={{color:"rgb(129,141,171)",marginTop:"10px",fontSize:"1.1rem"}} >{ele.type} Project</Typography>
