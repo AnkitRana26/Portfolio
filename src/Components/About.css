@@ -1,0 +1,13 @@
+
+.profileImage{
+    filter: grayscale(100%);
+    transition: 500ms linear;
+    
+}
+
+
+.profileImage:hover{
+    filter: contrast(10%);
+    filter: grayscale(0%)!important;
+    transform: scale(1.1);
+}

@@ -18,13 +18,15 @@ const Sidebar = () => {
 
     <Slide direction='up'  in={checked}>
 
-        <Box sx={{position:"fixed",bottom:"5%",left:"4%",display:"grid",justifyContent:"center",alignContent:"center",gap:"10px"}}>
-            <a className='socialLogo' href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-github"></i></a>
-            <a href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i class="fa-brands fa-linkedin"></i></a>
-            <a href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i class="fa-brands fa-instagram"></i></a>
-            <a href='#' style={{textDecoration:"none",color:"white",fontSize:"1.5rem"}}><i class="fa-regular fa-envelope"></i></a>
 
+        <Box sx={{position:"fixed",bottom:"5%",left:"4%",display:"grid",justifyContent:"center",alignContent:"center",gap:"15px"}}>
+            <a className='socialLogo' href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-github"></i></a>
+            <a className='socialLogo' href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-linkedin"></i></a>
+            <a className='socialLogo' href='#' style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-instagram"></i></a>
+            <a className='socialLogo' href='#' style={{textDecoration:"none",color:"white",fontSize:"1.5rem"}}><i className="fa-regular fa-envelope"></i></a>
+            
         </Box>
+        
     </Slide>
   )
 }
