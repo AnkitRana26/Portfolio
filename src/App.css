@@ -7,4 +7,18 @@
 
 body{
   background-color: rgb(11,24,47);
+  overflow-x: hidden;
+  font-family: sans-serif;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: white;
 }
