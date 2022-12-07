@@ -1,12 +1,23 @@
-import { Box, Button, Typography } from "@mui/material";
-import React, { useState } from "react";
+import { Box, Button, Slide, Typography } from "@mui/material";
+import React, { useEffect, useState } from "react";
 import LinearDeterminate from "./MiniComponent/ProgressComp";
 import logo from "../media/logo.png";
 import "./Navbar.css";
 
 const Navbar = () => {
+    const [checked,setChecked]= useState(false);
   const [hoverEffect, SetHoverEffect] = useState(0);
   const [scrolled, setScrolled] = useState(0);
+
+  const introLoaded=()=>{
+    setTimeout(()=>{
+        setChecked(true);
+
+    },600)
+}
+    useEffect(()=>{
+        introLoaded();
+    },[])
 
   const openResume = () => {
     window.open(
@@ -45,7 +56,7 @@ const Navbar = () => {
         
       </Box>
       <Box className="logoBox" sx={{ display: "none" }}>
-        <img height={"69px"} width={"62px"} src={logo} />
+        <img height={"70px"} width={"75px"} src={logo} />
       </Box>
       <Box
         className="navbar-part-2"
@@ -57,66 +68,77 @@ const Navbar = () => {
           alignItems: "center",
         }}
       >
-        <Box
-          className="navbarList"
-          sx={{ cursor: "pointer" }}
-          onMouseOut={() => {
-            SetHoverEffect(0);
-          }}
-          onMouseOver={() => SetHoverEffect(1)}
-        >
-          <Typography variant="h5">About</Typography>
-          {hoverEffect == 1 ? (
-            <LinearDeterminate color={"white"} />
-          ) : (
-            <Box sx={{ height: "4px" }}></Box>
-          )}
-        </Box>
-        <Box
-          className="navbarList"
-          sx={{ cursor: "pointer" }}
-          onMouseOut={() => {
-            SetHoverEffect(0);
-          }}
-          onMouseOver={() => SetHoverEffect(2)}
-        >
-          <Typography variant="h5">Education</Typography>
-          {hoverEffect == 2 ? (
-            <LinearDeterminate color={"white"} />
-          ) : (
-            <Box sx={{ height: "4px" }}></Box>
-          )}
-        </Box>
-        <Box
-          className="navbarList"
-          sx={{ cursor: "pointer" }}
-          onMouseOut={() => {
-            SetHoverEffect(0);
-          }}
-          onMouseOver={() => SetHoverEffect(3)}
-        >
-          <Typography variant="h5">Work</Typography>
-          {hoverEffect == 3 ? (
-            <LinearDeterminate color={"white"} />
-          ) : (
-            <Box sx={{ height: "4px" }}></Box>
-          )}
-        </Box>
-        <Box
-          className="navbarList"
-          sx={{ cursor: "pointer" }}
-          onMouseOut={() => {
-            SetHoverEffect(0);
-          }}
-          onMouseOver={() => SetHoverEffect(4)}
-        >
-          <Typography variant="h5">Contact</Typography>
-          {hoverEffect == 4 ? (
-            <LinearDeterminate color={"white"} />
-          ) : (
-            <Box sx={{ height: "4px" }}></Box>
-          )}
-        </Box>
+        <Slide direction="down" in={checked}>
+
+            <Box
+            className="navbarList"
+            sx={{ cursor: "pointer" }}
+            onMouseOut={() => {
+                SetHoverEffect(0);
+                }}
+                onMouseOver={() => SetHoverEffect(1)}
+                >
+            <Typography variant="h5" sx={{fontSize:"1.1rem" }}>About</Typography>
+            {hoverEffect == 1 ? (
+                <LinearDeterminate color={"white"} />
+                ) : (
+                    <Box sx={{ height: "4px" }}></Box>
+                    )}
+            </Box>
+        </Slide>
+
+        <Slide direction="down" in={checked}>
+            <Box
+            className="navbarList"
+            sx={{ cursor: "pointer" }}
+            onMouseOut={() => {
+                SetHoverEffect(0);
+                }}
+                onMouseOver={() => SetHoverEffect(2)}
+                >
+            <Typography variant="h5" sx={{fontSize:"1.1rem" }}>Education</Typography>
+            {hoverEffect == 2 ? (
+                <LinearDeterminate color={"white"} />
+                ) : (
+                    <Box sx={{ height: "4px"}}></Box>
+                    )}
+            </Box>
+        </Slide>
+        <Slide direction="down" in={checked}>
+            <Box
+            className="navbarList"
+            sx={{ cursor: "pointer" }}
+            onMouseOut={() => {
+                SetHoverEffect(0);
+                }}
+                onMouseOver={() => SetHoverEffect(3)}
+                >
+            <Typography variant="h5" sx={{fontSize:"1.1rem" }}>Work</Typography>
+            {hoverEffect == 3 ? (
+                <LinearDeterminate color={"white"} />
+                ) : (
+                    <Box sx={{ height: "4px" }}></Box>
+                    )}
+            </Box>
+        </Slide>
+
+        <Slide direction="down" in={checked}>
+            <Box
+            className="navbarList"
+            sx={{ cursor: "pointer" }}
+            onMouseOut={() => {
+                SetHoverEffect(0);
+                }}
+                onMouseOver={() => SetHoverEffect(4)}
+                >
+            <Typography variant="h5" sx={{fontSize:"1.1rem" }}>Contact</Typography>
+            {hoverEffect == 4 ? (
+                <LinearDeterminate color={"white"} />
+                ) : (
+                    <Box sx={{ height: "4px" }}></Box>
+                    )}
+            </Box>
+        </Slide>
         <Box>
           <Button
             onClick={openResume}
@@ -124,12 +146,12 @@ const Navbar = () => {
             sx={{
               border: "1px solid #64ffda",
               color: "white",
-              fontSize: "1rem",
+              fontSize: "0.8rem",
             }}
           >
             Resume
           </Button>
-          {/* <LinearDeterminate color={"transparent"}/> */}
+          <LinearDeterminate color={"transparent"}/>
         </Box>
       </Box>
     </Box>

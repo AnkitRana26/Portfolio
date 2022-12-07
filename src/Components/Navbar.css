@@ -13,18 +13,16 @@
 
 @media screen and (max-width:1200px) {
     .navbarList{
-        display: none;
+        display: none!important;
     }
     .navbar-part-2{
-        justify-content: right;
+        justify-content: right!important;
         /* border: 1px solid white; */
     }
     .logoText{
-        font-size: 1.3rem;
+        font-size: 1.3rem!important;
     }
-    .logoImage{
-        display: none;
-    }
+    
     .logoBox{
         display: block;
     }
