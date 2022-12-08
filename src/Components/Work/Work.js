@@ -36,7 +36,7 @@ const Work = () => {
           <Typography variant='h4' sx={{color:"rgb(191,201,232)",backgroundColor:"rgb(11,24,47)",position:"absolute",top:"-25px",left:"41%",padding:"0% 5% 0% 5%"}} >Work</Typography>
           </Zoom>
         </Box>
-        <Box sx={{display:"grid",gridTemplateColumns:"1fr 1fr",justifyContent:"center",marginTop:"5%",flexWrap:"wrap",rowGap:"10px"}}>
+        <Box className='projectContainer' sx={{display:"grid",gridTemplateColumns:"1fr 1fr",justifyContent:"center",marginTop:"5%",flexWrap:"wrap",rowGap:"10px"}}>
               {
                 details.projects.map((ele,index)=>{
                   return(
@@ -48,7 +48,7 @@ const Work = () => {
                                 <Box className='projectDescription'sx={{height:"100%"}} >
                                     <Box sx={{display:"flex",justifyContent:"space-between"}}>
                                         <Typography sx={{color:"rgb(203,213,245)"}} variant='h5'>{ele.name}</Typography>
-                                        <Box sx={{display:"flex",justifyContent:"space-between",width:"12%"}}>
+                                        <Box className='iconBox' sx={{display:"flex",justifyContent:"space-between",width:"12%"}}>
                                             <a style={{textDecoration:"none",color:"white",fontSize:"1.1rem"}} href={ele.github} target={"_blank"} ><i className="fa-brands fa-github"></i></a>
                                             <a style={{textDecoration:"none",color:"white",fontSize:"1.1rem"}} href={ele.live} target={"_blank"} ><i className="fa-solid fa-globe"></i></a>
                                         </Box>

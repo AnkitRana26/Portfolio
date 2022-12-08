@@ -30,7 +30,7 @@ const Skill = () => {
         <Box sx={{borderTop:"2px solid rgb(35,53,84)",position:"relative"}} >
           <Zoom in={checked2}>
 
-          <Typography variant='h4' sx={{color:"rgb(191,201,232)",backgroundColor:"rgb(11,24,47)",position:"absolute",top:"-25px",left:"41%",padding:"0% 5% 0% 5%"}} >Skills</Typography>
+          <Typography className='skillHeading' variant='h4' sx={{color:"rgb(191,201,232)",backgroundColor:"rgb(11,24,47)",position:"absolute",top:"-25px",left:"41%",padding:"0% 5% 0% 5%"}} >Skills</Typography>
           </Zoom>
         </Box>
         <Box sx={{display:"flex",justifyContent:"center",marginTop:"5%",flexWrap:"wrap",rowGap:"5px"}}>
@@ -38,7 +38,7 @@ const Skill = () => {
                 details.techStack.map((ele,index)=>{
                   return(
 
-                      <ListItem key={index} style={{display:"block",width:"25%"}}>
+                      <ListItem className='skillContainer' key={index} style={{display:"block",width:"25%"}}>
                             <Zoom  in={checked1}>
                               <Box className='skillStack'>
                                 <img className='skillStack' width={"45%"} style={{margin:"auto",display:"block"}} src={ele.img}/>

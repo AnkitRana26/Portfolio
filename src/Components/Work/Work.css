@@ -11,3 +11,20 @@
 .projectDescription{
     
 } */
+
+
+@media screen and (max-width:950px) {
+    
+    .projectContainer{
+        grid-template-columns: 1fr!important;
+    }
+    .projects{
+        width: 100%!important;
+    }
+    .projectImage{
+        height: 200px!important;
+    }
+    .iconBox{
+        width: 20%!important;
+    }
+}
