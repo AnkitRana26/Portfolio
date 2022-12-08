@@ -24,8 +24,9 @@
         text-align: center!important;
     }
     .goToButton{
-        display: block;
-        margin: 4% auto!important;
+        display: block!important;
+        margin:auto!important;
+        margin-top: 4%!important;
     }
 }
 @media screen and (max-width:700px) {

@@ -23,7 +23,7 @@ const Sidebar = () => {
         <Box sx={{position:"fixed",bottom:"5%",left:"4%",display:"grid",justifyContent:"center",alignContent:"center",gap:"15px"}}>
             <a className='socialLogo' target={"_blank"} href={details.githubLink} style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-github"></i></a>
             <a className='socialLogo' target={"_blank"} href={details.linkedInLink} style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-linkedin"></i></a>
-            <a className='socialLogo' target={"_blank"} href={details.instagramLink} style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-instagram"></i></a>
+            {/* <a className='socialLogo' target={"_blank"} href={details.instagramLink} style={{textDecoration:"none",color:"white",fontSize:"1.7rem"}}><i className="fa-brands fa-instagram"></i></a> */}
             <a className='socialLogo' target={"_blank"} href={details.mailLink} style={{textDecoration:"none",color:"white",fontSize:"1.5rem"}}><i className="fa-regular fa-envelope"></i></a>
         </Box>
         

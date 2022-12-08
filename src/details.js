@@ -1,8 +1,8 @@
 export const details={
     firstname:"Ankit",
     lastname:"Rana",
-    navList:["About","Skills","Work","Contact"],
-    scrollPosition:[545,1075,1745,3000],
+    navList:["Home","About","Skills","Work","Contact"],
+    scrollPosition:[0,545,1075,1745,3000],
     linkedInLink:"https://www.linkedin.com/in/ankitofficial/",
     githubLink:"https://github.com/AnkitRana26",
     instagramLink:"https://www.instagram.com/thetallboyankitr/",

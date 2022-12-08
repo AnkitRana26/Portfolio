@@ -5,7 +5,7 @@
 
 
 .profileImage{
-    filter: grayscale(100%);
+   
     transition: 500ms linear;
     
 }
@@ -35,6 +35,7 @@
     .aboutHeading{
         font-size: 1.5rem!important;
         top: -18px!important;
-        left: 30%!important;
+        left: 35%!important;
+        padding: 1%!important;
     }
 }

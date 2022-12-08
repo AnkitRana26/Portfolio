@@ -29,10 +29,10 @@ const About = () => {
             <Slide direction='right' in={checked2}>
 
                 <Typography className='aboutText' sx={{marginTop:"8%",color:"rgb(136,146,176)"}}>
-                    Hello! My name is <span style={{color:"white"}}>Ankit Rana</span> and I enjoy creating things that live on the internet. My interest in computers and technology started back in  when I was in my 6th grade and my father brought me a computer and after that day i kept doing lot of new things on my that.
+                    Hello! My name is <span style={{color:"white"}}>Ankit Rana</span> and I enjoy creating things that live on the internet. My interest in computers and technology started back in  when I was in my 6th grade and my father brought me a computer and after that day i kept doing lot of new things on that.
                     <br/>
                     <br/>
-                    After my graduation i was finding something to start my carrer in this field and gratefully i came into know about <span style={{color:"white"}}>Web Development</span> and started my journey from there.
+                    After my graduation i was finding something to start my carrer in tech field and gratefully i came into know about <span style={{color:"white"}}>Web Development</span> and started my journey from there.
                     Fast-forward to today, and I’ve worked in many projects with lot of tech stacks.My main focus these days is building accessible, inclusive products.
                 </Typography>
             </Slide>
