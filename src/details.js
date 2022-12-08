@@ -22,7 +22,7 @@ export const details={
             },
             {
                 name:"Java",
-                img:"https://img.icons8.com/fluency/512/css3.png"
+                img:"https://img.icons8.com/ios-filled/512/java-coffee-cup-logo.png"
             },
             {
                 name:"React",
