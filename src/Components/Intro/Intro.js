@@ -40,7 +40,7 @@ const Intro = () => {
             <Button 
             className='goToButton'
             onClick={()=>window.scrollTo({
-                top:details.scrollPosition[2],
+                top:details.scrollPosition[3],
                 behavior:"smooth"
             })}
             sx={{
