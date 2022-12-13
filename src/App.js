@@ -8,6 +8,7 @@ import { useRef } from 'react';
 import Skill from './Components/Skill/Skill';
 import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
+import GithubCalender from './Components/GithubCalender/GithubCalender';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <About  />
         <Skill/>
         <Work/>
+        <GithubCalender/>
         <Contact/>
     </div>
   );
