@@ -42,7 +42,7 @@ const About = () => {
         <Box className='imageContainer' sx={{display:"grid",justifyContent:"right"}}>
             
                 
-            <img className='profileImage' style={{display:"block",margin:"auto"}} width={"70%"} src='https://avatars.githubusercontent.com/u/109352490?v=4'/>
+            <img className='profileImage' style={{display:"block",margin:"auto",borderRadius:"5px"}} width={"70%"} src='https://avatars.githubusercontent.com/u/109352490?v=4'/>
 
             
         </Box>

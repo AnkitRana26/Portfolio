@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { details } from '../../details';
 import LinearDeterminate from '../MiniComponent/ProgressComp';
 import "./Intro.css"
-
+import Typewriter from 'typewriter-effect/dist/core';
 
 const Intro = () => {
     const [checked,setChecked]= useState(false);
@@ -18,6 +18,18 @@ const Intro = () => {
     useEffect(()=>{
         introLoaded();
     },[])
+    var typewriter = new Typewriter(document.getElementById("subHeading"), {
+        loop: true,
+        delay: 75,
+      });
+    typewriter
+  .pauseFor(500)
+  .typeString('I build things for <strong>Front-End</strong>')
+  .pauseFor(300)
+  .deleteChars(9)
+  .typeString('<strong>Back-End</strong>')
+  .pauseFor(1000)
+  .start();
   return (
     <Box  sx={{width:"80%",margin:"auto",marginTop:"5%"}}>
         <Box className='headingContainer' sx={{cursor:"pointer",width:"fit-content"}} onMouseOut={()=>{SetHoverEffect(0)}} onMouseOver={()=>SetHoverEffect(1)}>
@@ -30,7 +42,10 @@ const Intro = () => {
                 </Box>}
         </Box>
         <Zoom  in={checked}>
-            <Typography className='heading1' sx={{color:"rgb(136,146,176)",fontSize:"5rem"}} variant='h1'>I Build Things for the Web</Typography>
+            {/* <typewriter
+            
+            /> */}
+            <Typography id="subHeading" className='heading1' sx={{color:"rgb(136,146,176)",fontSize:"5rem"}} variant='h1'></Typography>
         </Zoom>
         <Zoom  in={checked}>
             <Typography className='intro' sx={{color:"rgb(136,146,176)",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
