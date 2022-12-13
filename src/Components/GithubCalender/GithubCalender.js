@@ -4,12 +4,14 @@ import GitHubCalendar from "react-github-calendar";
 
 export default function GithubCalender() {
   return (
-    <Box sx={{textAlign:"center",width:"fit-content",margin:"auto",color:"white",borderRadius:"8px",padding:"3% 1%",border:"2px solid white"}}>
-        <Typography></Typography>
-        <GitHubCalendar
+    <>
+        <Typography className='contactheading' sx={{textAlign:"center",fontWeight:"600",color:"rgb(204,214,246)",marginBottom:"2%"}} variant='h2' >My Contributions</Typography>
+    <Box sx={{textAlign:"center",width:"fit-content",margin:"auto auto 10% auto",color:"white",borderRadius:"8px",padding:"3% 1%",border:"2px solid white"}}>
+      <GitHubCalendar
           
           color="skyblue"
           username="ankitrana26" />
     </Box>
+          </>
   );
 }

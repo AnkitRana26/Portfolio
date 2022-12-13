@@ -29,7 +29,7 @@ const Work = () => {
         }
     }
   return (
-    <Box sx={{width:"80%",margin:"15% auto",padding:"0% 10px"}}>
+    <Box className='workDiv' sx={{width:"80%",margin:"15% auto",padding:"0% 10px"}}>
         <Box sx={{borderTop:"2px solid rgb(35,53,84)",position:"relative"}} >
           <Zoom in={checked2}>
 

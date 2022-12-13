@@ -4,6 +4,7 @@ import LinearDeterminate from "./ProgressComp";
 import logo from "../../media/logo.png";
 import "./Navbar.css";
 import { details } from "../../details";
+import Scroll from "react-scroll-to-element";
 
 
 const Navbar = ({scollHandle}) => {
@@ -73,30 +74,27 @@ const Navbar = ({scollHandle}) => {
       >
         {
             details.navList.map((ele,index)=>{
-                return <Slide key={index} direction="down" in={checked}>
+                return (
+                <Scroll offset={-150} type="class" element={details.className[index]}>
+                <Slide key={index} direction="down" in={checked}>
 
                 <Box
-                onClick={()=>{
-                    window.scrollTo({
-                        top:details.scrollPosition[index],
-                        behavior:"smooth"
-                    })
-                }}
                 className="navbarList"
                 sx={{ cursor: "pointer" }}
                 onMouseOut={() => {
                     SetHoverEffect(0);
-                    }}
-                    onMouseOver={() => SetHoverEffect(index+1)}
+                  }}
+                  onMouseOver={() => SetHoverEffect(index+1)}
                     >
                 <Typography variant="h5" sx={{fontSize:"1.1rem" }}>{ele}</Typography>
                 {hoverEffect == index+1 ? (
                     <LinearDeterminate color={"white"} />
                     ) : (
-                        <Box sx={{ height: "4px" }}></Box>
-                        )}
+                      <Box sx={{ height: "4px" }}></Box>
+                      )}
                 </Box>
             </Slide>
+                </Scroll>)
             })
         }
 

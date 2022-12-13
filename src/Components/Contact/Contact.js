@@ -25,7 +25,7 @@ const Contact = () => {
         window.open("mailto:ranaankitr@outlook.com","_blank");
     }
   return (
-    <Zoom in={checked1}>
+    <Zoom className='contactDiv' in={checked1}>
 
     <Box sx={{width:"80%",margin:"10% auto",padding:"0% 10px"}}>
         

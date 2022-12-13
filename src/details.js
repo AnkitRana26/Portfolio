@@ -10,6 +10,7 @@ export const details={
     lastname:"Rana",
     navList:["Home","About","Skills","Work","Contact"],
     scrollPosition:[0,545,1070,1730,3400],
+    className:["introDiv","aboutContainer","skillContainer","workDiv","contactDiv"],
     linkedInLink:"https://www.linkedin.com/in/ankitofficial/",
     githubLink:"https://github.com/AnkitRana26",
     instagramLink:"https://www.instagram.com/thetallboyankitr/",

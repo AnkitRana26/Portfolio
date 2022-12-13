@@ -4,7 +4,7 @@ import { details } from '../../details';
 import LinearDeterminate from '../MiniComponent/ProgressComp';
 import "./Intro.css"
 import Typewriter from 'typewriter-effect/dist/core';
-
+import Scroll from "react-scroll-to-element";
 const Intro = () => {
     const [checked,setChecked]= useState(false);
     const [hoverEffect,SetHoverEffect]=useState(0);
@@ -23,18 +23,18 @@ const Intro = () => {
         delay: 75,
       });
     typewriter
-  .pauseFor(500)
-  .typeString('I am <strong>Full Stack Developer<strong>')
-  .pauseFor(1000)
-  .deleteChars(25)
-  .typeString('I build things for <strong>Front-End</strong>')
-  .pauseFor(300)
-  .deleteChars(9)
-  .typeString('<strong>Back-End</strong>')
-  .pauseFor(1000)
-  .start();
+    .pauseFor(500)
+    .typeString('I am <strong>Full Stack Developer<strong>')
+    .pauseFor(1000)
+    .deleteChars(25)
+    .typeString('I build things for <strong>Front-End</strong>')
+    .pauseFor(300)
+    .deleteChars(9)
+    .typeString('<strong>Back-End</strong>')
+    .pauseFor(1000)
+    .start();
   return (
-    <Box  sx={{width:"80%",margin:"auto",marginTop:"5%"}}>
+    <Box className='introDiv'  sx={{width:"80%",margin:"auto",marginTop:"5%"}}>
         <Box className='headingContainer' sx={{cursor:"pointer",width:"fit-content"}} onMouseOut={()=>{SetHoverEffect(0)}} onMouseOver={()=>SetHoverEffect(1)}>
             <Zoom  in={checked}>
                 <Typography className="heading1" sx={{color:"rgb(191,201,232)",fontFamily:"arial",fontSize:"5rem"}} variant='h1' >{details.firstname+" "+details.lastname}</Typography>
@@ -51,23 +51,25 @@ const Intro = () => {
         <Zoom  in={checked}>
             <Typography className='intro' sx={{color:"rgb(136,146,176)",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
         </Zoom>
-        <Zoom in={checked}>
-            
-            <Button 
-            className='goToButton'
-            onClick={()=>window.scrollTo({
-                top:details.scrollPosition[3],
-                behavior:"smooth"
-            })}
-            sx={{
+        <Scroll offset={-150} type="class" element={"contactDiv"}>
+            <Zoom in={checked}>
                 
-              border: "1px solid #64ffda",
-              color: "white",
-              fontSize: "1rem",
-              marginTop:"4%",
-              padding:"1%"
-            }}>Check Out My Work</Button>
-        </Zoom>
+                <Button 
+                className='goToButton'
+                onClick={()=>window.scrollTo({
+                    top:details.scrollPosition[3],
+                    behavior:"smooth"
+                })}
+                sx={{
+                    
+                    border: "1px solid #64ffda",
+                    color: "white",
+                    fontSize: "1rem",
+                    marginTop:"4%",
+                    padding:"1%"
+                }}>Check Out My Work</Button>
+            </Zoom>
+        </Scroll>
     </Box>
   )
 }
