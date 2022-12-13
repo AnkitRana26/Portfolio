@@ -81,7 +81,7 @@ export const details={
         },
     
         {
-            name:"Nayka Replica",
+            name:"Nykaa Replica",
             github:"https://github.com/Raghvendra2811/Nykaa-Web-Clone",
             live:"https://naykaa.netlify.app/",
             type:"Collaborative",
