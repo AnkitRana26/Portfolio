@@ -1,13 +1,14 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
-import { GithubContributions } from "react-github-graph"
+import GitHubCalendar from "react-github-calendar";
 
 export default function GithubCalender() {
   return (
-    <Box sx={{textAlign:"center",width:"80%",margin:"auto",color:"white",borderRadius:"8px",background:"rgba(255,255,255,0.5)",backdropFilter: "saturate(180%) blur(10px)",padding:"3% 1%"}}>
+    <Box sx={{textAlign:"center",width:"fit-content",margin:"auto",color:"white",borderRadius:"8px",padding:"3% 1%",border:"2px solid white"}}>
         <Typography></Typography>
-        <GithubContributions
-          color="white"
+        <GitHubCalendar
+          
+          color="skyblue"
           username="ankitrana26" />
     </Box>
   );
