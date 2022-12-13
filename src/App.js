@@ -9,11 +9,13 @@ import Skill from './Components/Skill/Skill';
 import Work from './Components/Work/Work';
 import Contact from './Components/Contact/Contact';
 import GithubCalender from './Components/GithubCalender/GithubCalender';
+import Cursor from './Components/MiniComponent/Cursor';
 
 function App() {
 
   return (
     <div className="App">
+        <Cursor/>
         <Navbar />
         <Intro/>
         <Sidebar/>

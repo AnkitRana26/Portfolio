@@ -1,3 +1,10 @@
+import esqido from "./media/esqido.gif"
+import flixy from "./media/flixy.gif"
+import nykaa from "./media/nykaa.gif"
+import zomato from "./media/zomato.gif"
+
+
+
 export const details={
     firstname:"Ankit",
     lastname:"Rana",
@@ -59,17 +66,17 @@ export const details={
             live:"https://esqido.netlify.app/",
             type:"Colaborative",
             tech:["React","Chakra UI","Material UI"],
-            img:"https://miro.medium.com/max/1100/1*iGBZIUhEaf-T-8Q2SEIMKA.webp",
+            img:esqido,
             description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
 
         {
             name:"Zomato Replica",
-            github:"https://github.com/Rajatsinha05/Zomato-clone",
+            github:"https://media1.tenor.com/images/c4e7e3d30058ef3f2cb9901a50527696/tenor.gif?itemid=27241143",
             live:"https://clone-zomato-project.netlify.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript"],
-            img:"https://camo.githubusercontent.com/56ea395ac88ef9f95de1b17c642805a6e62566b001a9bd920aa1eaee8e1c242a/68747470733a2f2f6d69726f2e6d656469756d2e636f6d2f6d61782f313430302f312a63433478787468304838345f7866315f446e5a507a412e706e67",
+            img:zomato,
             description:"Food Ordering Platform where user can order food easily"
         },
     
@@ -79,7 +86,7 @@ export const details={
             live:"https://naykaa.netlify.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript","BootStrap"],
-            img:"https://github.com/Raghvendra2811/Nykaa-Web-Clone/raw/main/src/landing.png",
+            img:nykaa,
             description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
         {
@@ -88,7 +95,7 @@ export const details={
             live:"https://flixymovie.netlify.app/index.html",
             type:"Individual",
             tech:["HTML","CSS","JavaScript"],
-            img:"https://github.com/AnkitRana26/Flixy/raw/main/src/home1.png",
+            img:flixy,
             description:"Movie Related Information Application,Gives all Information and related Media of Movies,Shows"
         }
 

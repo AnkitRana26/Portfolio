@@ -24,6 +24,9 @@ const Intro = () => {
       });
     typewriter
   .pauseFor(500)
+  .typeString('I am <strong>Full Stack Developer<strong>')
+  .pauseFor(1000)
+  .deleteChars(25)
   .typeString('I build things for <strong>Front-End</strong>')
   .pauseFor(300)
   .deleteChars(9)
@@ -37,9 +40,7 @@ const Intro = () => {
                 <Typography className="heading1" sx={{color:"rgb(191,201,232)",fontFamily:"arial",fontSize:"5rem"}} variant='h1' >{details.firstname+" "+details.lastname}</Typography>
                 
             </Zoom>
-            {hoverEffect==1?<LinearDeterminate color={"white"}/>:<Box sx={{height:"4px"}}>
-
-                </Box>}
+            
         </Box>
         <Zoom  in={checked}>
             {/* <typewriter
