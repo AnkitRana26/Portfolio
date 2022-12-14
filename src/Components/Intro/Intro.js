@@ -51,15 +51,12 @@ const Intro = () => {
         <Zoom  in={checked}>
             <Typography className='intro' sx={{color:"rgb(136,146,176)",width:"65%",marginTop:"2%",fontSize:"1.4rem"}} variant='h5'>I’m a Full Stack Web Developer specializing in building (and occasionally designing) exceptional digital experiences. Currently, I’m focused on building accessible, human-centered products.</Typography>
         </Zoom>
-        <Scroll offset={-150} type="class" element={"contactDiv"}>
+        <Scroll offset={-150} type="class" element={details.className[3]}>
             <Zoom in={checked}>
                 
                 <Button 
-                className='goToButton'
-                onClick={()=>window.scrollTo({
-                    top:details.scrollPosition[2],
-                    behavior:"smooth"
-                })}
+                
+                
                 sx={{
                     
                     border: "1px solid #64ffda",
