@@ -42,7 +42,7 @@ const Work = () => {
                   return(
 
                       <ListItem key={index} style={{display:"block"}}>
-                            <Slide direction={index%2===0?"right":"left"}  in={checked1}>
+                            <Zoom   in={checked1}>
                               <Box className='projects' sx={{display:"grid",gap:"15px",backgroundColor:"rgb(17,34,64)",padding:"10px",borderRadius:"5px",width:"90%",margin:"auto",height:"100%"}}>
                                 <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"}  width={"100%"}  >
                                 <source src={ele.img} type="video/mp4" />
@@ -71,7 +71,7 @@ const Work = () => {
                                     </Box>
                                 </Box>
                               </Box>
-                            </Slide>
+                            </Zoom>
                       </ListItem>
                   )
                 })
