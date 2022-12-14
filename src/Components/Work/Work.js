@@ -44,7 +44,9 @@ const Work = () => {
                       <ListItem key={index} style={{display:"block"}}>
                             <Slide direction={index%2===0?"right":"left"}  in={checked1}>
                               <Box className='projects' sx={{display:"grid",gap:"15px",backgroundColor:"rgb(17,34,64)",padding:"10px",borderRadius:"5px",width:"90%",margin:"auto",height:"100%"}}>
-                                <img className='projectImage' height={"240px"}  width={"100%"} src={ele.img} />
+                                <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"}  width={"100%"}  >
+                                <source src={ele.img} type="video/mp4" />
+                                </video>
                                 <Box className='projectDescription'sx={{height:"100%"}} >
                                     <Box sx={{display:"flex",justifyContent:"space-between"}}>
                                         <a style={{textDecoration:"none"}} href={ele.github} target="_blank">

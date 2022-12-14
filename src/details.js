@@ -1,7 +1,7 @@
-import esqido from "./media/esqido.gif"
-import flixy from "./media/flixy.gif"
-import nykaa from "./media/nykaa.gif"
-import zomato from "./media/zomato.gif"
+import esqido from "./media/esqido.mp4"
+import flixy from "./media/flixy.mp4"
+import nykaa from "./media/nykaa.mp4"
+import zomato from "./media/zomato.mp4"
 
 
 
@@ -73,7 +73,7 @@ export const details={
 
         {
             name:"Zomato Replica",
-            github:"https://media1.tenor.com/images/c4e7e3d30058ef3f2cb9901a50527696/tenor.gif?itemid=27241143",
+            github:"https://media1.tenor.com/images/c4e7e3d30058ef3f2cb9901a50527696/tenor.mp4?itemid=27241143",
             live:"https://clone-zomato-project.netlify.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript"],
