@@ -55,7 +55,7 @@ const Intro = () => {
             <Zoom in={checked}>
                 
                 <Button 
-                
+                className='goToButton'
                 
                 sx={{
                     
