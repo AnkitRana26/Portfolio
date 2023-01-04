@@ -2,6 +2,7 @@ import esqido from "./media/esqido.mp4"
 import flixy from "./media/flixy.mp4"
 import nykaa from "./media/nykaa.mp4"
 import zomato from "./media/zomato.mp4"
+import hebeboutique from "./media/hebeboutique.mp4"
 
 
 
@@ -56,17 +57,35 @@ export const details={
             {
                 name:"Github",
                 img:"https://img.icons8.com/glyph-neue/512/github.png"
+            },
+            {
+                name:"Express JS",
+                img:"https://img.icons8.com/ios/512/express-js.png"
+            },
+            {
+                name:"Mongo DB",
+                img:"https://img.icons8.com/color/512/mongodb.png"
             }
 
     ],
     projects:[
 
         {
+            name:"HebeBoutique Replica",
+            github:"https://github.com/MohitIndoriya/hebefullstack",
+            live:"https://hebeboutique.netlify.app/",
+            type:"Colaborative",
+            tech:["React","Chakra UI","Node JS","Mongo DB","Express JS"],
+            img:hebeboutique,
+            description:"Full Stack Application of E-Commerce Website That deals with Clothing and accessories"
+        },
+
+        {
             name:"Esqido Replica",
             github:"https://github.com/AnkitRana26/esqido-clone",
             live:"https://esqido.netlify.app/",
             type:"Colaborative",
-            tech:["React","Chakra UI","Material UI"],
+            tech:["React","Chakra UI"],
             img:esqido,
             description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
