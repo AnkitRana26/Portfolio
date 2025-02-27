@@ -44,9 +44,9 @@ const Work = () => {
                       <ListItem key={index} style={{display:"block"}}>
                             <Zoom   in={checked1}>
                               <Box className='projects' sx={{display:"grid",gap:"15px",backgroundColor:"rgb(17,34,64)",padding:"10px",borderRadius:"5px",width:"90%",margin:"auto",height:"100%"}}>
-                                <video autoPlay="autoplay" loop="true" muted className='projectImage' height={"240px"}  width={"100%"}  >
+                                {ele?.img ? <video loop="true" muted className='projectImage' height={"240px"}  width={"100%"}  >
                                 <source src={ele.img} type="video/mp4" />
-                                </video>
+                                </video> : <img src={ele.image} style={{width: "100%"}}/>}
                                 <Box className='projectDescription'sx={{height:"100%"}} >
                                     <Box sx={{display:"flex",justifyContent:"space-between"}}>
                                         <a style={{textDecoration:"none"}} href={ele.github} target="_blank">

@@ -1,8 +1,9 @@
-import esqido from "./media/esqido.mp4"
-import flixy from "./media/flixy.mp4"
-import nykaa from "./media/nykaa.mp4"
-import zomato from "./media/zomato.mp4"
-import hebeboutique from "./media/hebeboutique.mp4"
+import esqido from "./media/esqido.PNG"
+import flixy from "./media/flixy.PNG"
+import nykaa from "./media/nykaa.PNG"
+import zomato from "./media/zomato.PNG"
+import hebeboutique from "./media/hebeboutique.PNG"
+import bemedic from "./media/bemedic.png"
 
 
 
@@ -69,24 +70,34 @@ export const details={
 
     ],
     projects:[
+        {
+            name:"Bemedic Academy",
+            github:"",
+            live:"https://bemedicacademy.com/",
+            type:"Colaborative",
+            tech:["React","Tailwind CSS","Node JS","Mongo DB","Express JS"],
+            img: null,
+            image: bemedic,
+            description:"BeMedic Academy – Online Health & Specialization Learning Platform"
+        },
 
         {
             name:"HebeBoutique Replica",
             github:"https://github.com/MohitIndoriya/hebefullstack",
-            live:"https://hebeboutique.netlify.app/",
+            live:"https://hebeboutique1.netlify.app/",
             type:"Colaborative",
             tech:["React","Chakra UI","Node JS","Mongo DB","Express JS"],
-            img:hebeboutique,
+            image:hebeboutique,
             description:"Full Stack Application of E-Commerce Website That deals with Clothing and accessories"
         },
 
         {
             name:"Esqido Replica",
             github:"https://github.com/AnkitRana26/esqido-clone",
-            live:"https://esqido.netlify.app/",
+            live:"https://portfolio-9s6u.vercel.app/",
             type:"Colaborative",
             tech:["React","Chakra UI"],
-            img:esqido,
+            image:esqido,
             description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
 
@@ -96,26 +107,26 @@ export const details={
             live:"https://clone-zomato-project.netlify.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript"],
-            img:zomato,
+            image:zomato,
             description:"Food Ordering Platform where user can order food easily"
         },
     
         {
             name:"Nykaa Replica",
             github:"https://github.com/Raghvendra2811/Nykaa-Web-Clone",
-            live:"https://naykaa.netlify.app/",
+            live:"https://nykaa-web-clone.vercel.app/",
             type:"Collaborative",
             tech:["HTML","CSS","JavaScript","BootStrap"],
-            img:nykaa,
+            image:nykaa,
             description:"E-Commerce Web Application of Cosmetics,User can order products from Application"
         },
         {
             name:"Flixy Movie",
             github:"https://github.com/AnkitRana26/Flixy",
-            live:"https://flixymovie.netlify.app/index.html",
+            live:"https://flixy-beige.vercel.app/",
             type:"Individual",
             tech:["HTML","CSS","JavaScript"],
-            img:flixy,
+            image:flixy,
             description:"Movie Related Information Application,Gives all Information and related Media of Movies,Shows"
         }
 
