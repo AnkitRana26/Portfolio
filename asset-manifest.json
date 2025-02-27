@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.74f1b471.css",
+    "main.js": "/static/js/main.4f175acf.js",
+    "static/js/787.d05921f7.chunk.js": "/static/js/787.d05921f7.chunk.js",
+    "static/media/zomato.PNG": "/static/media/zomato.ee8b336c95213bea49ec.PNG",
+    "static/media/hebeboutique.PNG": "/static/media/hebeboutique.cbf55e918f44ca1d8c05.PNG",
+    "static/media/flixy.PNG": "/static/media/flixy.f7c731c7e52427b39c48.PNG",
+    "static/media/nykaa.PNG": "/static/media/nykaa.54d6090b4c6fe3b46f57.PNG",
+    "static/media/esqido.PNG": "/static/media/esqido.cb8bde853bf191d6aaee.PNG",
+    "static/media/bemedic.png": "/static/media/bemedic.0907c0747596ddecc032.png",
+    "static/media/logo.png": "/static/media/logo.134ea3d574f678ad06f2.png",
+    "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/index.html",
+    "main.74f1b471.css.map": "/static/css/main.74f1b471.css.map",
+    "main.4f175acf.js.map": "/static/js/main.4f175acf.js.map",
+    "787.d05921f7.chunk.js.map": "/static/js/787.d05921f7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.74f1b471.css",
+    "static/js/main.4f175acf.js"
+  ]
+}
