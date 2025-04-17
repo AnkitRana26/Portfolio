@@ -70,16 +70,16 @@ export const details={
 
     ],
     projects:[
-        {
-            name:"Bemedic Academy",
-            github:"",
-            live:"https://bemedicacademy.com/",
-            type:"Colaborative",
-            tech:["React","Tailwind CSS","Node JS","Mongo DB","Express JS"],
-            img: null,
-            image: bemedic,
-            description:"BeMedic Academy – Online Health & Specialization Learning Platform"
-        },
+        // {
+        //     name:"Bemedic Academy",
+        //     github:"",
+        //     live:"https://bemedicacademy.com/",
+        //     type:"Colaborative",
+        //     tech:["React","Tailwind CSS","Node JS","Mongo DB","Express JS"],
+        //     img: null,
+        //     image: bemedic,
+        //     description:"BeMedic Academy – Online Health & Specialization Learning Platform"
+        // },
 
         {
             name:"HebeBoutique Replica",
